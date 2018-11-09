@@ -23,6 +23,7 @@ The files are on the Server folder.
 * app.js - the NodeJS server configuration
 
 Database:
+
 inside the DB folder, there is a backup file of the DB. 
 The DB includes:
 * Store procedure - UpdatePersonalDetials - for send data from the server.
