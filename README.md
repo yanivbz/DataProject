@@ -1,5 +1,6 @@
 # Data Update Project
-In this project, you can enter first name, last name, gender and upload personal image.
+The project is a form for client personal details update. 
+You can enter first name, last name, gender and upload personal image.
 The file will be uploaded to the server, and the client data will be updated on the DB.
 
 ## Project Technologies
