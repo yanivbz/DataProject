@@ -1,0 +1,51 @@
+﻿<div class="home-wrapper">
+    <h1>
+        Belong Project
+    </h1>
+
+    <main>
+        <form name="detailsForm" ng-submit="submit" enctype="multipart/form-data" action="/path/to/uploadPic" , method="post">
+            <md-input-container>
+                <label>First Name</label>
+                <input name="firstName" ng-model="vm.firstName" required>
+            </md-input-container>
+
+            <md-input-container>
+                <label>Last Name</label>
+                <input name="lastName" ng-model="vm.lastName" required>
+            </md-input-container>
+
+            <md-input-container>
+                <label>Gender</label>
+                <md-select ng-model="vm.gender" required>
+                    <md-option ng-repeat="gender in vm.genders" value="{{gender}}">{{gender}}</md-option>
+                </md-select>
+            </md-input-container>
+
+            <div class="input">
+                <input file-model="fileToUpload" name="file" type="file" onchange="angular.element(this).scope().fileChanged()" accept="image/*">
+            </div>
+
+            <div class="input">
+                <md-button class="md-raised md-primary" ng-click="vm.uploadFile()" ng-disabled="vm.isUploadFileButton">Upload File To Server</md-button>
+                <md-button class="md-raised md-primary" ng-click="vm.sendData(vm.firstName, vm.lastName, vm.gender, vm.imageUrl)" ng-disabled="detailsForm.$invalid">Update Details</md-button>
+            </div>
+        </form>
+
+        
+        <div class="image" ng-if="vm.imageUrl != null">
+            <img class="image" ng-src="{{vm.imageUrl}}" />
+        </div>
+
+        <div class="error" ng-if="vm.showError">
+            An error occured. Please try again.
+        </div>
+        <div class="error" ng-if="vm.showSuccess">
+            The data was update successfully on the Database!
+        </div>
+
+    </main>
+
+</div>
+
+

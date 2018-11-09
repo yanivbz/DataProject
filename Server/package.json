@@ -1,0 +1,20 @@
+{
+  "name": "belong",
+  "version": "1.0.0",
+  "description": "belong application",
+  "main": "server.js",
+  "scripts": {
+    "test": "test command"
+  },
+  "author": "Yaniv Ben-Zion",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "formidable": "^1.2.1",
+    "joi": "^14.0.4",
+    "mssql": "^4.2.3",
+    "multer": "^1.4.1"
+  }
+}
