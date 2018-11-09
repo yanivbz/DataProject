@@ -28,8 +28,8 @@ Database:
 
 inside the DB folder, there is a backup file of the DB. 
 The DB includes:
-* Store procedure - UpdatePersonalDetials - for send data from the server.
-* tbl_users - the table for updating the data.
+* Store procedure - UpdatePersonalDetials - for sending data from the server.
+* tbl_users - data table of the form.
 
 ## Getting Started
 To start the project you may need to upload the frontend files to the IIS.
