@@ -10,12 +10,14 @@ The file will be uploaded to the server, and the client data will be updated on 
 
 ## Project Structure
 FrondEnd:
+
 The files of the project are on the APP folder. 
 in the app folder inside, you can find the mvc structure folders.
 * controllers folder - the controllers of the page view
 * services folder - the http post services for the apis.
 
 Backend:
+
 The files are on the Server folder.
 * Connection folder - the database connection settings.
 * Controller folder - the apis code.
