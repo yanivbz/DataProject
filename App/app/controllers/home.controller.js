@@ -4,7 +4,7 @@ app.controller('HomeCtrl', ['$scope', 'DataService', '$http', 'FilesService', '$
     var self = this;
     self.showError = false;
     self.showSuccess = false;
-    self.genders = ['Male', 'Female', 'Other'];
+    self.genders = ['Male', 'Female'];
     self.isUploadFileButton = true;
 
     self.sendData = function (firstName, lastName, gender, picUrl) {
